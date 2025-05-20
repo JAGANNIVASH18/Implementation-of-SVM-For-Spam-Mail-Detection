@@ -36,17 +36,20 @@ import pandas as pd
 data=pd.read_csv("spam.csv",encoding='windows-1252')
 data.head()
 ```
-![alt text](<Screenshot 2025-05-17 140847.png>)
+![image](https://github.com/user-attachments/assets/cb03e943-02fc-4f36-a81c-ad3e5dead0e9)
+
 
 ```
 data.info()
 ```
-![alt text](<Screenshot 2025-05-17 140855.png>)
+![image](https://github.com/user-attachments/assets/145af677-8d97-456c-959f-c752490dbff7)
+
 
 ```
 data.isnull().sum()
 ```
-![alt text](<Screenshot 2025-05-17 140901.png>)
+![image](https://github.com/user-attachments/assets/14ca0be9-88b7-406d-9400-b6ecb7ce7f81)
+
 
 ```
 x=data["v1"].values
@@ -63,14 +66,16 @@ svc.fit(x_train,y_train)
 y_pred=svc.predict(x_test)
 y_pred
 ```
-![alt text](<Screenshot 2025-05-17 141837.png>)
+![image](https://github.com/user-attachments/assets/8cdfabfc-6e41-47c5-b376-afa3770cbac8)
+
 
 ```
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
 ```
-![alt text](<Screenshot 2025-05-17 141845.png>)
+![image](https://github.com/user-attachments/assets/97159524-0d1c-4422-a7fd-28b3ad3cd2c7)
+
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
